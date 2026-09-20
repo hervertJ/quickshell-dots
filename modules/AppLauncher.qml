@@ -54,17 +54,6 @@ Scope {
     onPressed: root.launcherOpen = !root.launcherOpen
   }
 
-  // --- Cierra el launcher si cambia el workspace activo mientras está abierto ---
-  // Así solo "vive" en el workspace donde lo abriste.
-  Connections {
-    target: Hyprland
-    function onRawEvent(event) {
-      if (root.launcherOpen && event.name === "workspace") {
-        root.launcherOpen = false;
-      }
-    }
-  }
-
   // PanelWindow no hereda de Item -> hay que usar LazyLoader (no Loader normal)
   LazyLoader {
     id: launcherLoader
@@ -209,14 +198,14 @@ Scope {
                 RowLayout {
                   anchors.fill: parent
                   //anchors.margins: 10
-                  anchors.leftMargin: 15
+                  anchors.leftMargin: 10
                   spacing: 10
 
-                  //IconImage {
-                    //  source: Quickshell.iconPath(entry.modelData.icon, true)
-                    //  Layout.preferredWidth: 22
-                    //  Layout.preferredHeight: 22
-                    //}
+                  IconImage {
+                    source: Quickshell.iconPath(entry.modelData.icon, true)
+                    Layout.preferredWidth: 22
+                    Layout.preferredHeight: 22
+                  }
 
                     Text {
                       Layout.fillWidth: true

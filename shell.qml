@@ -8,8 +8,7 @@ import "./modules"
 
 ShellRoot {
   Bar {}
-  //Compact {}
+  ClipboardLauncher {}
   AppLauncher {}
-  //Launcher {}
-  Clipboard {}
+  WallpaperPicker {}
 }
