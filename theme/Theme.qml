@@ -43,7 +43,6 @@ QtObject {
   property int fontSize: 18
   property int weight: 750
 
-
   property int radius: 16
   property int radiusSmall: 18
   property int spacing: 10

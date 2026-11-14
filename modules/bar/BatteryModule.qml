@@ -1,6 +1,6 @@
 import Quickshell.Services.UPower
 import QtQuick
-import "../theme"
+import qs.theme
 
 Item {
   id: root
@@ -14,7 +14,7 @@ Item {
   Text {
     id: batteryText
     text: "bat: " + root.level + "%"
-    color: Theme.green2
+    color: Theme.red2
 
     font {
       family: Theme.fontFamily

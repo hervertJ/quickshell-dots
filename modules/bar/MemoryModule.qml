@@ -1,6 +1,6 @@
 import QtQuick
-import "../services"
-import "../theme"
+import qs.theme
+import qs.services
 
 Item {
   implicitWidth: memoryText.implicitWidth

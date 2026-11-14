@@ -1,8 +1,7 @@
 import Quickshell
 import QtQuick
 import QtQuick.Layouts
-import "../modules"
-import "../theme"
+import qs.theme
 
 Variants {
   model: Quickshell.screens
@@ -26,11 +25,13 @@ Variants {
 
       Item{ Layout.fillWidth: true }
 
+      ClockModule {}
+
+      Item{ Layout.fillWidth: true }
       //CpuModule {}
       MemoryModule {}
       VolumeModule {}
       BatteryModule {}
-      ClockModule {}
     }
   }
 }

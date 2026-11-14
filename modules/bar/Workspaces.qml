@@ -2,10 +2,10 @@ import Quickshell
 import Quickshell.Hyprland
 import QtQuick
 import QtQuick.Layouts
-import "../theme"
+import qs.theme
 
 RowLayout {
-  spacing: 18
+  spacing: 24
 
   Repeater {
     model: 9
